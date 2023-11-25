@@ -1,2 +1,2 @@
 # Personal_Scripts
-Personal Scripts
+Collection of personal scripts
