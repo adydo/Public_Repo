@@ -1,20 +1,17 @@
-﻿
 param(
     [Parameter()] 
     [String]$path
 )
 
 #$path = "c:\temp\test.csv"
-
-$sito = "https://api.country.is/"
+$site = "https://api.country.is/"
 $geo_track = @()
 
-
 Import-Csv $path | Foreach-Object { 
-
      $ip = $_.PSObject.Properties.Value
-     $uri = $sito + $ip
+     $uri = $site + $ip
      Start-Sleep -m 500
+     
 try{
      $response = Invoke-RestMethod $uri 
 }
