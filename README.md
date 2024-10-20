@@ -1,2 +1,2 @@
-# Personal_Scripts
-Collection of personal scripts
+# Powershell Scripts
+Collection of powershell scripts
